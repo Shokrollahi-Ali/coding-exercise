@@ -1,46 +1,53 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A concise description of the project.
+## Handling CORS Errors
+If you encounter network CORS (Cross-Origin Resource Sharing) errors while running the project and see “Network Error!!”, you can use browser extensions to temporarily fix the problem.
+Enable the extension while testing your application. Remember, this is a temporary solution and should not be used in a production environment.
+## API Requests with React Query
+This project utilizes React Query for handling API requests. React Query comes with built-in features for handling retries when an API request fails.
+### Retry Behavior
+By default, React Query will automatically retry failed queries. If an API request encounters an error, React Query will make additional attempts to fetch the data. The number of retry attempts is configurable. This is the reason you will not see the network error immediately.
+## Getting Started
+These instructions will help you set up and run the project on your local machine for checking results and code review.
+## Prerequisites
+Make sure you have Node.js and npm installed on your machine.
+## Installing
+Clone the repository:
 
-## Available Scripts
+https://github.com/Shokrollahi-Ali/coding-exercise.git
 
-In the project directory, you can run:
+cd your-project
 
-### `npm start`
+Install dependencies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+npm install
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Running the Project
 
-### `npm test`
+To start the development server, run:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm start
 
-### `npm run build`
+This will launch the application in your default web browser. You can view it at http://localhost:3000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React-v18.2.0: The JavaScript library for building user interfaces.
 
-### `npm run eject`
+TypeScript-v4.9.5: A superset of JavaScript that adds static typing.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+React Router Dom-v6.21.0: For implementing dynamic routing in web applications.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Axios-v1.6.2: A promise-based HTTP client for making API calls.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+React Query-v3.39.3: A library for handling and caching API requests.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Material UI-v5.15.1: A React component library.
 
-## Learn More
+Context API: Used for state management.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Notes on State Management**
+For this project, a state management solution like Redux wasn't necessary. The Context API was sufficient to manage state effectively.
+Unit tests are not currently implemented. If given more time, writing comprehensive unit tests would be a priority.
