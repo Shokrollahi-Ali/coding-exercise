@@ -13,7 +13,7 @@ export const useData = () => {
     {
       keepPreviousData: true,
       refetchOnWindowFocus: false,
-      onError: (error) => {
+      onError: (error = {}) => {
         const { message } = error as ServerError;
         setServiceMessage(message ?? 'Network Error!!');
       },
@@ -28,7 +28,7 @@ export const useData = () => {
     {
       keepPreviousData: true,
       refetchOnWindowFocus: false,
-      onError: (error) => {
+      onError: (error = {}) => {
         const { message } = error as ServerError;
         setServiceMessage(message ?? 'Network Error!!');
       },
